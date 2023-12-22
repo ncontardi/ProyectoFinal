@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./js/index.js" defer></script>
+    <title>Cafe</title>
+    <script src="C:\Users\AMD Ryzen 7 5700g\Documents\NetBeansProjects\Prueba0009\src\main\webapp\js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iKJE9Gd6O3u9xuJ7U3m/GISB/JnZSqXnFXYu5MWj/mK8erF2bpkLPMO" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="styles/index.css" type="text/css"/>
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <div class="Logo">
+                <img src="images/cafeteria2.png" alt="">
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-icono" id="carrito-label">
+                    <img src="images/pngegg.png" alt="Carritodecompras">
+                    <span id="cuenta-carrito">0</span>
+            </label>
+
+            <nav class="navbar" id="navbar">
+
+                    <div class="carrito">
+                        <h2>Carrito de Compras</h2>
+                        <ul id="listaCarrito"></ul>
+                        <p>Total: $<span id="total">0.00</span></p>
+                    </div>
+            </nav>  
+        </div>
+        <div class="header-content container">
+            <h1>Cafe Rico</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aut nobis eligendi optio nemo consectetur at dolorem 
+                dolores reiciendis doloremque animi, temporibus enim, 
+                dolore rem illum vero quasi quidem. Necessitatibus.          
+            </p> 
+            <button class="btn-1"><a href="vistas/mostrar_reservas.jsp">Ver las Reservas</a></button>
+            <button class="btn-1"><a href="vistas/login.jsp">Login</a></button>
+        </div>
+            
+    </header>
+    <section class="coffee">
+        <div id="productos-container">
+            <div class="container">
+                <h2 class="text-center">Productos</h2>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card">   
+                            <img src="images/Muestra3.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="card-header">
+                                <h5 class="card-title">Cafe Latte</h5>          
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled precio-circulo">
+                                    <li>$480</li>
+                                </ul>
+                                <button class="btn-1">Agregar al carrito</button>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Muestra2.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="card-header">
+                                <h5 class="card-title">Cafe Cortado</h5>             
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled precio-circulo">                      
+                                    <li>$470</li>
+                                </ul>
+                                <button class="btn-1">Agregar al Carrito</button>
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Muestra3.jpg" class="card-img-top img-fluid" alt="">
+                            <div class="card-header">
+                                <h5 class="card-title">Capuchino</h5>                              
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled precio-circulo">                                   
+                                    <li>$460</li>
+                                </ul>
+                                <button class="btn-1">Agregar al Carrito</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="services">
+        <div id="servicios"></div>
+        <div class="services-content container">
+            <h2>Cafeteria servicios</h2>
+            <div class="services-group">
+
+                <div class="services-1">
+                    <img src="images/i1.svg" alt="">
+                    <h3>Servicio 1</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/i2.svg" alt="">
+                    <h3>Servicio 2</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/i3.svg" alt="">
+                    <h3>Servicio 3</h3>
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Laborum sequi nobis quisquam, id quas, adipisci necessitatibus 
+                blanditiis officia magnam repellat totam quasi doloremque? Non 
+                odio nesciunt laborum soluta! Ipsam, eveniet?
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>      
+    </main>
+    <section class="general">
+        <div class="general-1">
+            <h2>totam simplifique</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatum natus voluptatibus quae dolore blanditiis ratione, distinctio, 
+                eos quidem ipsa beatae maxime nam pariatur quo? 
+                Esse explicabo ab debitis voluptates odit!
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+        <div class="general-2"></div>
+    </section>
+    <section class="general">
+        <div class="general-3"></div>
+        <div class="general-1">
+            <h2>totam simplifique</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatum natus voluptatibus quae dolore blanditiis ratione, distinctio, 
+                eos quidem ipsa beatae maxime nam pariatur quo? 
+                Esse explicabo ab debitis voluptates odit!
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+    </section>
+    <section class="blog container">
+        <div id="blog"></div>
+        <h2>Blog</h2>
+        <p>eos quidem ipsa beatae maxime nam pariatur quo?</p>     
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="blog-1">
+                    <img src="images/blog1.jpg" alt="">
+                    <h3>Blog 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, 
+                        fugiat facilis! Ea cupiditate fugit illo non dolores nulla soluta 
+                        voluptas voluptatum fuga nobis? Dolorum, pariatur saepe voluptates 
+                        ipsum corporis veniam?
+                    </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="blog-1">
+                    <img src="images/blog2.jpg" alt="">
+                    <h3>Blog 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, 
+                        fugiat facilis! Ea cupiditate fugit illo non dolores nulla soluta 
+                        voluptas voluptatum fuga nobis? Dolorum, pariatur saepe voluptates 
+                        ipsum corporis veniam?
+                    </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="blog-1">
+                    <img src="images/blog3.jpg" alt="">
+                    <h3>Blog 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, 
+                        fugiat facilis! Ea cupiditate fugit illo non dolores nulla soluta 
+                        voluptas voluptatum fuga nobis? Dolorum, pariatur saepe voluptates 
+                        ipsum corporis veniam?
+                    </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>   
+          <a href="#" class="btn-1">Informacion</a> 
+    </section>
+    <section>
+        <div class="galeria">
+            <h2 class="galeria-title">Galeria</h2>
+            <div class="galeria-content container">      
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/A5.jpg" alt="Imagen 1" class="card-img-top">                         
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/A4.jpg" alt="Imagen 2" class="card-img-top">           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/A2.jpg" alt="Imagen 3" class="card-img-top">           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="anotate container mt-5">
+        <h2 class="text-center">Crea una Reserva</h2>
+        <p class="text-center">Anótate para registrar una Reserva.</p>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center">Formulario de Registro</h2>
+                <form action="RegistroReserva" method="post" class="row g-3">
+            <div class="col-md-6 offset-md-3">
+                <label for="nombreReserva" class="form-label">Nombre Reserva</label>
+                <input type="text" class="form-control" id="nombreReserva" name="nombreReserva" placeholder="NombreReserva" required>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <label for="apellidoReserva" class="form-label">Apellido Reserva</label>
+                <input type="text" class="form-control" id="apellidoReserva" name="apellidoReserva" placeholder="ApellidoReserva" required>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+                </form>
+        </div>
+    </div>
+    </section>
+    
+    <footer class="footer">
+        <div id="contactos"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contacto</h4>
+                    <p>Dirección: Buen Café, Mendoza</p>
+                    <p>Teléfono: (XXX) XXX-XXXX</p>
+                    <p>Correo electrónico: info@caferico.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Horarios</h4>
+                    <p>Lunes - Viernes: 6:30 AM - 8:00 PM</p>
+                    <p>Sábados: 7:00 AM - 6:00 PM</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Redes</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </footer>   
+    
+<!-- jQuery -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eMNCOsEJT9jEZIvE3rHj5uVt2sLxssxgfsW8EMT/rhoqlaQ1t0U0TZ1fThA1KWwE" crossorigin="anonymous"></script>
+</body>
+</html>
